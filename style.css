@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+h2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #f0f0f0;
+    font-size: 50px;
+}
+
+p{
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #f0f0f0;
+}
+
+a{
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #f0f0f0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    background-color: #f0f0f0; /* Default background color */
+}
+
+#image-container {
+    text-align: center;
+}
+
+#image-wrapper {
+    margin-bottom: 10px; /* Add spacing between image and controls */
+}
+
+#image-wrapper img {
+    max-width: 80%; /* Adjusted width */
+    max-height: 60vh; /* Adjusted height */
+    border-radius: 10px; /* Add border radius */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #f0f0f0;
+}
+
+#color-picker {
+    margin-left: 10px; /* Add spacing between controls */
+}
+
+#image-description {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px; /* Adjust the font size */
+    color: #333; /* Adjust the font color */
+    margin-top: 10px; /* Add spacing between image and text */
+}
