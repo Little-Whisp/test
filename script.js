@@ -26,10 +26,13 @@ function handleColorChange(event) {
     // Determine the brightness of the selected color
     const brightness = calculateBrightness(color);
 
-    // Adjust the color of the h2 text based on the brightness
-    const h2 = document.querySelector('h2');
-    h2.style.color = brightness > 128 ? '#000' : '#fff'; // Choose black text for light backgrounds and white text for dark backgrounds
-    
+    // Adjust the color of all text elements based on the brightness
+    const textColor = brightness > 128 ? '#000' : '#fff'; // Choose black text for light backgrounds and white text for dark backgrounds
+    const textElements = document.querySelectorAll('body *');
+    textElements.forEach(element => {
+        element.style.color = textColor;
+    });
+
     // Update the RGB text with the selected color
     const rgbText = document.getElementById('rgb-text');
     rgbText.textContent = `RGB: ${color}`;
@@ -63,11 +66,14 @@ if (savedColor) {
     document.body.style.backgroundColor = savedColor;
     document.getElementById('color-picker').value = savedColor; // Update the color picker value
     
-    // Adjust the color of the h2 text based on the brightness of the saved color
+    // Adjust the color of all text elements based on the brightness of the saved color
     const brightness = calculateBrightness(savedColor);
-    const h2 = document.querySelector('h2');
-    h2.style.color = brightness > 128 ? '#000' : '#fff'; // Choose black text for light backgrounds and white text for dark backgrounds
-    
+    const textColor = brightness > 128 ? '#000' : '#fff'; // Choose black text for light backgrounds and white text for dark backgrounds
+    const textElements = document.querySelectorAll('body *');
+    textElements.forEach(element => {
+        element.style.color = textColor;
+    });
+
     // Update the RGB text with the saved color
     const rgbText = document.getElementById('rgb-text');
     rgbText.textContent = `RGB: ${savedColor}`;

@@ -5,6 +5,7 @@ h2 {
     font-family: 'Poppins', Arial, sans-serif;
     color: #f0f0f0;
     font-size: 50px;
+    margin-bottom: 1px;
 }
 
 p{
@@ -58,5 +59,17 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 16px; /* Adjust the font size */
     color: #333; /* Adjust the font color */
-    margin-top: 10px; /* Add spacing between image and text */
 }
+
+#text-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust the space between h2 and the text */
+    margin-bottom: 20px; /* Adjust the space between the text and the image */
+}
+
+#text-container a {
+    display: block;
+    max-width: 80%; /* Limit the width of the text */
+    margin: 0 auto; /* Center the text horizontally */
+}
+
